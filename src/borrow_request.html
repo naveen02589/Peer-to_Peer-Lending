@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>BORROW</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body >
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <h1 class="text-center">Add Borrow Request</h1>
+          
+          
+        </div>
+      </div>
+      <div class="row">
+        <hr/>
+        <table class='table' width='100%' align='center' style="border-spacing: 1px;border-color: #ffffff">
+          <tr >
+            <td width ='35%'></td>
+            <td width ='15%'>
+          <strong>Amount</strong>: 
+        </td><td width ='50%'><input class="movie-name" id='amt'></input>
+        </td>
+        </tr>
+          <tr>
+            <td width ='35%'></td>
+            <td width ='15%'><strong>ROI</strong>: 
+              </td><td width ='50%'><input class="movie-symbol" id='roi'></input>
+          </td>
+        </tr>
+        <tr>
+            <td width ='35%'></td>
+            <td width ='15%'><strong>Repayment Time</strong>: 
+              </td><td width ='50%'><input class="movie-tickets" id='rt'></input>
+          </td>
+        </tr>
+
+        <td align='center' colspan="3">
+          
+          <button class="btn btn-default newborrow" type="button" id='create' name='create'  data-id="create" >Add New borrow request</button>
+          <button class="btn btn-default cancel" type="button" id='cancel' name='cancel'  data-id="cancel" >Cancel</button>
+          
+        </td>
+      </tr>
+          </table>
+          <br/>
+        <br/>
+      </div>
+      <div id="petsRow" class="row">
+        <!-- PETS LOAD HERE -->
+      </div>
+    </div>
+
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/borrow.js"></script>
+    
+  </body>
+</html>
